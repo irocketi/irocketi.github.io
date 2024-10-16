@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>Sabeeka</title>    
+
+  </head>
+  <body>
+
+
+    <div id="game">
+      <p>public class Main {</p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[]) {
+      </p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("<span
+          class="slow-msg msg-w"
+          >Hi, I'm Sabeeka :)</span
+        >");
+      </p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+      <p>}</p>
+    </div>
+    <div class="text-center project-btn">
+      <button class="btn btn-outline-dark " onclick="scrolldiv()">Projects</button>
+    </div>
+
+    <div class="sidepanel">
+      
+      <button type="button" class="btn btn-light"><a class="navbar-brand" href="#">Go to Top</a></button>
+
+    </div>
+
+    <div id="content">
+      
+
+      <div class="top">
+        <h1>Projects</h1>
+        <p><div class="slow-msg1">Click on the projects to see more</div></p>
+
+
+        <!-- Spending Tracker modal start -->
+        <div class="modall spending-modal hidden overflow-auto">
+          <div class="card">
+            <div id="spendingCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#spendingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#spendingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#spendingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#spendingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="media/Spending tracker/1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                  <img src="media/Spending tracker/2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                  <img src="media/Spending tracker/3.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                  <video controls muted>
+                    <source
+                      src="media/Spending tracker/spendingTracker.mp4" type="video/mp4" 
+                    />
+                  </video>
+                </div>
+              </div>
+              <button class="carousel-control-prev d" type="button" data-bs-target="#spendingCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d" type="button" data-bs-target="#spendingCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body spaced">
+              <h2 class="card-title">Spending Tracker</h2>
+              <p class="card-text">
+                <h3>Overview</h3>
+                <h4>As part of a 10-person group, I helped build an application to supplement money management and sharing costs. The app allows for users to set a target limit to their expenditures and share expenditures between different users. It also shows an analysis of expenditure history and some other gamification features, such as ‘house points’ and leaderboards. </h4>
+                <h3>Development</h3>
+                <h4>This application was developed using Django framework. Most of the code is written in Python; however, this is accompanied with HTML, CSS and JavaScript. The application was developed using an agile approach. The project was completed with unit testing to verify the full and correct functionality of the programme. </h4>
+                <div class="text-center">
+                  <a href="https://github.com/rawanalnouri/MyDoom" target="_blank" class="btn btn-secondary btn-lg" role="button">GitHub</a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+
+
+
+        <div class="modalHolder"></div>
+        
+        <!-- Pacman modal start -->
+        <div class="modall pacman-modal hidden overflow-auto">
+          <div class="card">
+            <div id="pacmanCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#pacmanCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#pacmanCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#pacmanCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#pacmanCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="media/Pacman movie/Screenshot 2024-10-11 at 19.11.09.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="media/Pacman movie/Screenshot 2024-10-11 at 19.11.25.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <video controls muted>
+                    <source
+                      src="media/Pacman movie/pacman medium grid movie.mp4" type="video/mp4" 
+                    />
+                  </video>
+                </div>
+                <div class="carousel-item">
+                  <video controls muted>
+                    <source
+                      src="media/Pacman movie/pacman movie smallgrid.mp4" type="video/mp4" 
+                    />
+                  </video>
+                </div>
+              </div>
+              <button class="carousel-control-prev d" type="button" data-bs-target="#pacmanCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d" type="button" data-bs-target="#pacmanCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body spaced">
+              <h2 class="card-title">Pacman AI</h2>
+              <p class="card-text">
+                <h3>Overview</h3>
+                <h4>A Python implementation of artificial intelligence search algorithms to solve problems within the Berkeley Pacman environment. AI concepts are applied to the classic arcade game. I have programmed the Pacman agent to use Markov Decision Process’ logic to maximise the utility of the paths it takes.</h4>
+                <h3>Development</h3>
+                <h4>Python 2 was used to implement Pacman’s logic. Markov Decision process included value iteration and Policy iteration to maximise utility of each move. The positions of ghosts and food was used as the main components of calculations.</h4>
+                <div class="text-center">
+                  <a href="https://github.com/irocketi/Pacman-AI" target="_blank" class="btn btn-secondary btn-lg" role="button">GitHub</a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Air bnb modal start -->
+        <div class="modall air-modal hidden overflow-auto">
+          <div class="card">
+            <div id="airCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#airCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#airCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#airCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#airCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#airCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="media/Air Bnb/Screenshot 2024-10-11 at 20.55.50.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                  <img src="media/Air Bnb/Screenshot 2024-10-11 at 20.57.04.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                  <img src="media/Air Bnb/Screenshot 2024-10-11 at 20.57.14.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                  <img src="media/Air Bnb/Screenshot 2024-10-11 at 20.57.45.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <video controls muted>
+                    <source
+                      src="media/Air Bnb/Airbnb movie.mp4" type="video/mp4" 
+                    />
+                  </video>
+                </div>
+              </div>
+              <button class="carousel-control-prev d" type="button" data-bs-target="#airCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d" type="button" data-bs-target="#airCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body spaced">
+              <h2 class="card-title">Property Viewer GUI</h2>
+              <p class="card-text">
+                <h3>Overview</h3>
+                <h4>As a group of 4, we developed a GUI for exploring and comparing properties that are available for temporary rental in London. We utilised a real-world data set of the London property market, from Airbnb. The application is designed to process and display the data from the database in a digestible form for a user.</h4>
+                <h3>Development</h3>
+                <h4>Java FX was used to develop this application. We used APIs for the weather forecast to be able to get updates in real time. The purpose of the application was to be a simple user interface; therefore, the view is made to be a series of panels that acted as containers for separation of buttons and main views. The focus for this project was code elegance, maintainability, documentation and readability.</h4>
+                <div class="text-center">
+                  <a href="https://github.kcl.ac.uk/K20045738/Property-Viewer " target="_blank" class="btn btn-secondary btn-lg" role="button">GitHub</a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- platformer modal start -->
+        <div class="modall platformer-modal hidden overflow-auto">
+          <div class="card">
+            <div id="platformerCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#platformerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#platformerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#platformerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="media/Python platformer/image (2).png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="media/Python platformer/image.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <video controls muted>
+                    <source
+                      src="media/Python platformer/platformer.mp4" type="video/mp4" 
+                    />
+                  </video>
+                </div>
+              </div>
+              <button class="carousel-control-prev d" type="button" data-bs-target="#platformerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d" type="button" data-bs-target="#platformerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body spaced">
+              <h2 class="card-title">Platformer Game</h2>
+              <p class="card-text">
+                <h3>Overview</h3>
+                <h4>My first attempt as a programming project. The game is simple; Once you press play, you need to eliminate the zombies and jump over the obstacles on the ground. This was alongside detailed documentation of the development process.</h4>
+                <h3>Development</h3>
+                <h4>I created this video game using Pygame. This game was created using an agile development approach. The characters were drawn and animated to run, jump, aim and shoot. The game is complete with navigation through different screens and a score count. The entire process of research, design, implementation and testing is fully documented. </h4>
+                <div class="text-center">
+                  <a href="https://github.com/irocketi/Platformer-game" target="_blank" class="btn btn-secondary btn-lg" role="button">GitHub</a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Dissertation project modal start -->
+        <div class="modall diso-modal hidden overflow-auto">
+          <div class="card">
+            <div id="disoCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#disoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#disoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="media/Diso movie/Screenshot 2024-10-11 at 19.26.26.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <video controls muted>
+                    <source
+                      src="media/Diso movie/Diso movie.mp4" type="video/mp4" 
+                    />
+                  </video>
+                </div>
+              </div>
+              <button class="carousel-control-prev d" type="button" data-bs-target="#disoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d" type="button" data-bs-target="#disoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body spaced">
+              <h2 class="card-title">Dissertation - Graduate skills vs. Industry requirements project</h2>
+              <p class="card-text">
+                <h3>Overview</h3>
+                <h4>My dissertation for my bachelor’s degree consisted of a research project on bridging the gap between graduate skills and industry requirements. The backbone of this project was collecting data and processing it to conclude the skillset the average graduate has, and the top requirements that industry has. These findings were mapped to each other to find the gaps. This software created was accompanied with an in-depth dissertation document. </h4>
+                <h3>Development</h3>
+                <h4>I conducted extensive research on the subject collecting data from across the web. Experiments included the creation of Python web scrapers, data mining using Python NLTK library, and a final website which processed a database to output graphical analysis of patterns found. This website presented a database of information into an easily digestible format. These patterns were then used for proposals of improvement to future academic curriculum. </h4>
+                <div class="text-center">
+                  <a href="https://github.com/irocketi/Diso" target="_blank" class="btn btn-secondary btn-lg" role="button">GitHub</a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Simulation modal start -->
+        <div class="modall sim-modal hidden overflow-auto">
+          <div class="card">
+            <div id="simCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#simCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#simCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="media/Simulation/Screenshot 2024-10-11 at 15.50.56.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <video controls muted>
+                    <source
+                      src="media/Simulation/Simulation Video.mp4" type="video/mp4" 
+                    />
+                  </video>
+                </div>
+              </div>
+              <button class="carousel-control-prev d" type="button" data-bs-target="#simCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d" type="button" data-bs-target="#simCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body spaced">
+              <h2 class="card-title">Food Chain Simulation</h2>
+              <p class="card-text">
+                <h3>Overview</h3>
+                <h4>In this pair-programming project, we developed a food chain simulation to simulate the population of different species in an environment where different weathers, times of day, disease, and competition exists. The simulation can be sped up, slowed down and limited to the number of specified steps.</h4>
+                <h3>Development</h3>
+                <h4>This simulation project was a modification of a simple simulation project made using Java FX. It was built using BlueJ. Several species were added with differing behaviours. Some species slept for example at night, some multiplied faster than others, the night and day influenced certain species (e.g. plants didn’t grow at night). These factors all contributed to the extinction or survival of species in the food chain. </h4>
+                <div class="text-center">
+                  <a href="https://github.com/9areeba/Simulation-Project" target="_blank" class="btn btn-secondary btn-lg" role="button">GitHub</a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+
+        <!-- scheduling modal start -->
+        <div class="modall scheduling-modal hidden overflow-auto">
+          <div class="card">
+            <div id="schedulingCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#schedulingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#schedulingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#schedulingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#schedulingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="media/Scheduling system/1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="media/Scheduling system/2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="media/Scheduling system/3.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <video controls muted>
+                    <source
+                      src="media/Scheduling system/Scheduling systen movie.mp4" type="video/mp4" 
+                    />
+                  </video>
+                </div>
+              </div>
+              <button class="carousel-control-prev d" type="button" data-bs-target="#schedulingCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d" type="button" data-bs-target="#schedulingCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon d" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body spaced">
+              <h2 class="card-title">Scheduling System</h2>
+              <p class="card-text">
+                <h3>Overview</h3>
+                <h4>As part of a small group project, we created an application to aid scheduling lessons. The application allows access to different tools depending on your account’s authority. For example, as a director, you have access to all controls. Admins have less access than directors, but more than a student. Each student can request lessons, which are then confirmed and scheduled by either an admin or director. The student can then see the lesson added to their online timetable.</h4>
+                <h3>Development</h3>
+                <h4>This application was developed using Python and Django. There was also basic HTML and CSS. The tasks were split between members of the group, and we opted for an agile approach; I mainly dealt with the student timetable and automatically adding proved lessons to it, and the sign in and access rights. The project was completed with unit testing. </h4>
+                <div class="text-center">
+                  <a href="https://github.com/TNgyn15/hyena" target="_blank" class="btn btn-secondary btn-lg" role="button">GitHub</a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+        
+
+      <div class="allCards">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col show-spending-modal clickable">
+            <div class="card shadow-lg">
+              <video class="playonhover">
+                <source
+                  src="media/Spending tracker/preview.mp4" type="video/mp4" 
+                />
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">Spending Tracker</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <!-- <a class="stretched-link show-modal"></a> -->
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col show-pacman-modal clickable">
+            <div class="card shadow-lg">
+              <video class="playonhover">
+                <source
+                  src="media/Pacman movie/preview.mp4"
+                />
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">Pacman AI</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Python</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col show-air-modal clickable">
+            <div class="card shadow-lg">
+              <video class="playonhover">
+                <source
+                  src="media/Air Bnb/preview.mp4"
+                />
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">Property Viewer GUI</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Java</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col show-platformer-modal clickable">
+            <div class="card shadow-lg">
+              <video class="playonhover">
+                <source
+                  src="media/Python platformer/preview.mp4"
+                />
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">Platformer Game</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Python</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col show-diso-modal clickable">
+            <div class="card shadow-lg">
+              <video class="playonhover">
+                <source
+                  src="media/Diso movie/preview.mp4"
+                />
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">Dissertation - Graduate skills vs. Industry requirements project</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col show-sim-modal clickable">
+            <div class="card shadow-lg">
+              <video class="playonhover">
+                <source
+                  src="media/Simulation/preview.mp4"
+                />
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">Food Chain Simulation</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Java</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col show-sheduling-modal clickable">
+            <div class="card shadow-lg">
+              <video class="playonhover">
+                <source
+                  src="media/Scheduling system/preview.mp4"
+                />
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">Scheduling System</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Python</li>
+                    <li>HTML</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="projectScript.js">
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
